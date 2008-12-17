@@ -1,0 +1,18 @@
+.clear {
+	font-size: 1px;
+	line-height: 0px;
+	clear:both;
+}
+
+.q_portfolio, a.q_portfolio:link, a.q_portfolio:visited {
+	color: #B76C29;
+}
+.q_log, a.q_log:link, a.q_log:visited {
+	color: #22395B;
+}
+.q_blog, a.q_blog:link, a.q_blog:visited {
+	color: #3C6A8F;
+}
+.q_com, a.q_com:link, a.q_com:visited {
+	color: #72391E;
+}
