@@ -107,15 +107,18 @@ a img {
 
 #content {
 	float:left;
-	width: 500px;
+	width: 540px;
 	padding: 0px 20px;
 	margin-right: 40px;
 }
 .post {
-	line-height: 160%;
+	line-height: 180%;
 }
 .post h2 {
 	font-size: 26px;
+}
+.post h3 {
+	color: #000;
 }
 .post h2 a {
 	color: #556273;
@@ -131,7 +134,18 @@ a img {
 	font-size: 12px;
 	color: #666;
 }
-.postmetadata a {
+.postmetadata.single {
+	padding: 15px 0px;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+.post strong {
+	color:#000;
+	font-weight:normal;
+}
+.post strong a {
+	color:#000;
+	font-weight:normal;
 }
 #sidebar {
 	width: 340px;
@@ -201,13 +215,53 @@ p.tagline {
 	color:#333;
 	padding-top: 5px;
 	font-size:16px;
-	width: 200px;
+	width: 220px;
 }
 .tagline strong {
-	font-size:120%;
+	font-size:110%;
 	font-weight:normal;
 	color:#333374;
 }
 strong.a_lt {
 	color:#445874;
+}
+#comments h3 {
+	color:#666;
+	margin-top: 40px;
+}
+#comments input, #comments textarea {
+	width: 540px;
+}
+.navigation {
+	width: 100%;
+	font-size: 16px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.navigation a {
+	text-decoration:none;
+}
+.navigation .prev, .navigation .next {
+	width: 250px;
+	float:left;
+	padding: 10px;
+	color: #999;
+}
+.navigation .prev {
+	text-align:left;
+}
+.navigation .next {
+	text-align:right;
+}
+ul.archive {
+	list-style-type:none;
+	margin: 0px;
+	padding: 0px;	
+}
+ul.archive li {
+	font-size: 16px;
+	padding: 0px 0px 20px;
+	color: #999;
+}
+ul.archive li a {
+	text-decoration:none;
 }

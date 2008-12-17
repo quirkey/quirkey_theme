@@ -1,3 +1,4 @@
+<?php $is_home = true ?>
 <?php get_header(); ?>
 
 <div id="content">

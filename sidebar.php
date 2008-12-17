@@ -1,14 +1,16 @@
 <div id="sidebar">
 
 		<h3><a href="http://feeds.feedburner.com/quirkey"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/qblog-feed-icon20.png" alt="RSS" /> Subscribe via RSS</a>
-			<?php query_posts('showposts=4&offset=1')?>
+			<?php $offset = is_home() ? 1 : 0; ?>
+			<?php $shownum = is_home() ? 4 : 8; ?>
+			<?php query_posts("showposts=$shownum&offset=$offset")?>
 			<?php if (have_posts()) : ?>
 				<h3>Also Recent</h3>
 				<ul>
 				<?php while (have_posts()) : the_post(); ?>
 					<li>⚡ <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><br /><?php the_time('F jS, Y') ?></li>
 				<?php endwhile; ?>
-
+				</ul>
 			<?php endif; ?>
 		
 		<?php /* If this is a 404 page */ if (is_404()) { ?>

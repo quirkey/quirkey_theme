@@ -18,26 +18,26 @@
 ?>
 
 <!-- You can start editing here. -->
-
+<div id="comments">
 <?php if ($comments) : ?>
-	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
+	<h3><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
 
-	<ol class="commentlist">
+	<div class="commentlist">
 
 	<?php foreach ($comments as $comment) : ?>
 
-		<li class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
-			<cite><?php comment_author_link() ?></cite> Says:
+		<div class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
+			<?php comment_author_link() ?> Says:
 			<?php if ($comment->comment_approved == '0') : ?>
 			<em>Your comment is awaiting moderation.</em>
 			<?php endif; ?>
 			<br />
 
-			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></a> <?php edit_comment_link('e','',''); ?></small>
+			<p class="commentmetadata"><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></p>
 
 			<?php comment_text() ?>
 
-		</li>
+		</div>
 
 	<?php /* Changes every other comment to a different class */	
 		if ('alt' == $oddcomment) $oddcomment = '';
@@ -46,7 +46,7 @@
 
 	<?php endforeach; /* end for each comment */ ?>
 
-	</ol>
+	</div>
 
  <?php else : // this is displayed if there are no comments so far ?>
 
@@ -90,7 +90,7 @@
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
 
-<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<p><textarea name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
 
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
@@ -102,3 +102,4 @@
 <?php endif; // If registration required and not logged in ?>
 
 <?php endif; // if you delete this the sky will fall on your head ?>
+</div>
