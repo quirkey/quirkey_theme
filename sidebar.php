@@ -41,5 +41,6 @@
 				
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 	
+	  <p><a href="http://scotlandonrails.com" title="Scotland on Rails: speaker"><img src="http://scotlandonrails.com/images/badges/speaking_s.png" alt="Scotland on Rails: speaker"/></a></p>
 </div>
 

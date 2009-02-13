@@ -3,7 +3,9 @@
 	line-height: 0px;
 	clear:both;
 }
-
+.q_code, a.q_code:link, a.q_code:visited {
+	color: #EADA68;
+}
 .q_portfolio, a.q_portfolio:link, a.q_portfolio:visited {
 	color: #B76C29;
 }

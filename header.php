@@ -27,6 +27,7 @@
 </head>
 
 <body>
+<a href="http://github.com/quirkey"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:50;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" /></a>
 	<div id="container">
 		<div id="header_holder">
 			<div id="header">
@@ -36,6 +37,7 @@
 				<div id="quirkey_nav" style="display: none;">
 				  <h1 class="quirkey_log">Quirkey<a href="http://log.quirkey.com/" class="q_log">Log</a><span class="description">Up-to-the-minute updates from the interweb.</span></h1>
 				  <h1 class="quirkey_blog">Quirkey<a href="http://portfolio.quirkey.com/" class="q_portfolio">Portfolio</a><span class="description">Selected Work.</span></h1>
+				  <h1 class="quirkey_code">Quirkey<a href="http://code.quirkey.com/" class="q_code">Code</a><span class="description">Open-source free for all.</span></h1>
 				  <h1 class="quirkey_com">Quirkey<a href="http://www.quirkey.com" class="q_com">.com</a><span class="description">The Lobby; General Information.</span></h1>
 				</div>
 			</div>
